@@ -1,0 +1,360 @@
+name: flutter_application_1_register_login_dummy1
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  firebase_core:
+  firebase_auth:
+  get:
+  firebase_database:
+  rflutter_alert:
+  faker: ^2.1.0
+  carousel_slider: ^4.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^2.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/registerpage.jpg
+    - assets/images/HomeImage.jpg
+    - assets/images/ab.jpg
+    - assets/images/NAVI1.png
+    - assets/images/Hiking.jpg
+    - assets/images/Camping.webp
+    - assets/images/Diving.jpg
+    - assets/images/WaterRaffing.jpg
+    - assets/images/Safari1.jpg
+    - assets/images/Badulla.jpg
+    - assets/images/Kandy.jpg
+    - assets/images/Anuradhapura.png
+    - assets/images/NuwaraEliya.jpg
+    - assets/images/Jaffna.jpg
+    - assets/images/Galle.webp
+    - assets/images/Kurunagala.webp
+    - assets/images/Ratnapura.webp
+    - assets/images/Colombo.jpg
+    - assets/images/Matale.jpg
+    - assets/images/Matara.jpg
+    - assets/images/Kegalle.jpg
+    - assets/images/Hambantota.jpg
+    - assets/images/Gampaha.jpg
+    - assets/images/Kalutara.jpg
+    - assets/images/Trincomalee.jpg
+    - assets/images/Polonnaruwa.jpg
+    - assets/images/Batticaloa.jpg
+    - assets/images/Ampara.jpg
+    - assets/images/Mannar.jpg
+
+    #Login
+    - assets/images/Loginimage.jpg
+
+    - assets/images/Galle.jpg
+    - assets/images/Galle Fort.webp
+    - assets/images/Dutch Reformed church.jpg
+    - assets/images/Hikkaduwa Beach.jpg
+    - assets/images/Jungle Beach.jpg
+    - assets/images/Sea Turtle Hatchery Mahamodara.jpg
+    - assets/images/Mirissa Beach.jpg
+    - assets/images/Sri Sudharmalaya Buddhist Temple.jpg
+    - assets/images/Yatagala Rajamaha Viharaya.jpg
+    - assets/images/Naga Viharaya.jpg
+
+    - assets/images/vElla Rock.jpg
+    - assets/images/vNine Arch Bridge.jpg
+    - assets/images/vNarangala.jpg
+    - assets/images/vcaption.jpg
+    - assets/images/vDunhinda Falls.jpg
+    - assets/images/vMuthiyangana Rajamaha viharaya.jpg
+    - assets/images/vDhowa Temple.png
+    - assets/images/vLipton Seat.jpg
+    - assets/images/vBogoda Wooden Bridge.jpg
+    - assets/images/vMadulsima.jpg
+    - assets/images/vIdalgashinna.jpg
+
+    #NuwaraEliya
+    - assets/images/vQueen Victoria Park.jpg
+    - assets/images/vMoon Plains.jpg
+    - assets/images/vSeetha Amman Kovil.jpg
+    - assets/images/vHorton Plains National Park.jpg
+    - assets/images/vLake Gregory.jpg
+    - assets/images/vLover Leap.jpg
+    - assets/images/vHakgala Botanical Garden1.jpg
+    - assets/images/vSingle Tree Hill.jpg
+    - assets/images/vAmbewela Farm.jpg
+    - assets/images/vNuwara_Eliya.jpg
+    - assets/images/vDevon Falls.jpg
+
+
+    #Anuradhapura
+    - assets/images/vsri.jpeg
+    - assets/images/vruwan.jpeg
+    - assets/images/vjeta.jpeg
+    - assets/images/visuru.jpeg
+    - assets/images/vsamadhi.jpeg
+    - assets/images/vabaya.webp
+    - assets/images/vmihinthalaya.jpeg
+    - assets/images/vapura.jpeg
+
+    #Colombo
+    - assets/images/vseema.jpeg
+    - assets/images/vdutch.png
+    - assets/images/vvihara.jpeg
+    - assets/images/vinde.jpeg
+    - assets/images/vclmb.jpeg
+    - assets/images/vmuseum.jpeg
+    - assets/images/vgalle.jpeg
+    - assets/images/vold.jpeg
+    - assets/images/vpettah.jpeg
+    - assets/images/vkelaniya.jpeg
+    - assets/images/vmv.jpeg
+
+    #Batticaloa
+    - assets/images/vpigeon.jpeg
+    - assets/images/vkalladi.jpeg
+    - assets/images/vthoppigala.jpeg
+    - assets/images/vkal.jpeg
+    - assets/images/vfort.jpeg
+    - assets/images/vbatti.jpeg
+
+    #Matale
+    - assets/images/vsembu.jpeg
+    - assets/images/vnalanda.jpeg
+    - assets/images/valu.jpeg
+    - assets/images/vriver.jpeg
+    - assets/images/vpidu.webp
+    - assets/images/vknuckles.jpeg
+    - assets/images/vmeemure.jpeg
+    - assets/images/vwas.jpeg
+    - assets/images/vmatale.jpeg
+
+    #Ampara
+    - assets/images/vokanda.jpeg
+    - assets/images/voluvil.jpeg
+    - assets/images/vmuhudu.jpeg
+    - assets/images/vkumana.jpeg
+    - assets/images/varugambay.jpeg
+    - assets/images/vmaruthamunai.jpeg
+    - assets/images/vampara.jpeg
+
+    #Kurunagala
+    - assets/images/vyapahuwa.jpeg
+    - assets/images/vkuru.jpeg
+    - assets/images/vyak.jpeg
+    - assets/images/vbadagamuwa.jpeg
+    - assets/images/vpandu.webp
+    - assets/images/vridi.jpeg
+    - assets/images/vwadakada.jpeg
+    - assets/images/vpaangala.jpeg
+    - assets/images/vathugala.jpeg
+    - assets/images/vlake.jpeg
+    - assets/images/vaandagala.jpeg
+
+    #Trincomalee
+    - assets/images/Nilaveli beach.webp 
+    - assets/images/Marble Beach.jpg 
+    - assets/images/pigeon Island National Park.jpg
+    - assets/images/Villuntri Kandaswamy Kovil.jpg
+    - assets/images/Sampoor Lighthouse.jpg 
+    - assets/images/Uppuveli beach.jpg
+    - assets/images/Thiru Koneswaram kovil.jpg
+    - assets/images/Sinnakarachchi Lake.jpg
+    - assets/images/Ancient Sluice of Kantale Tank.jpg
+    - assets/images/Sri Lakshmi Narayana Perumal.jpg
+    - assets/images/Trinco.webp
+
+    #Hambantota
+    - assets/images/Tissamaharama Raja Mahaviharaya.jpg
+    - assets/images/Ridiyagama Safari Park.webp
+    - assets/images/Madunagala Hot Water Spring.jpg
+    - assets/images/Bataatha Agro Technology and Tourism Park.jpg 
+    - assets/images/kirinda Beach.jpg 
+    - assets/images/Dry Zone Botanic Garden.jpg
+    - assets/images/Hummanaya Blow Hole.jpg
+    - assets/images/Yala National Park.jpg 
+    - assets/images/Sapugahadola Ella Falls.jpg
+    - assets/images/Katuwana Fort.jpg
+    - assets/images/hamb.jpg
+    
+    #Gampaha
+    - assets/images/Guruge national park.jpg
+    - assets/images/Maligatenna rajamaha viharaya.jpg
+    - assets/images/Henarathgoda botanical garden.jpg
+    - assets/images/Alagiyawanna falls.jpg
+    - assets/images/Horagolla national park.jpg
+    - assets/images/Dhaladagamuwa rajamaha viharaya.jpg
+    - assets/images/Negambo beach.webp
+    - assets/images/Gam1.jpg
+
+    #Jaffna
+    - assets/images/Sangilean Thoopu.jpg
+    - assets/images/Public_Library,_Jaffna.jpg
+    - assets/images/Nallur.jpg
+    - assets/images/Nainatheevu.jpg
+    - assets/images/Jaffna Fort.jpg
+    - assets/images/Kandarodei Temple.jpg
+    - assets/images/Keerinalain or Naguleeswaram Temple.jpg
+    - assets/images/Casuarina Beach.jpg
+    - assets/images/Dambakola Patuna.jpg
+    - assets/images/Charty beach.jpg
+    - assets/images/jaff.jpg
+
+    #Mannar
+    - assets/images/Shrine of our Lady of Madhu.jpg
+    - assets/images/Mannar island.jpg
+    - assets/images/The Doric at Arippu.jpg
+    - assets/images/Baobab tree.webp
+    - assets/images/Mannar fort.jpg
+    - assets/images/Yoda Wewa.jpg
+    - assets/images/Aadams-bridge.jpg
+    - assets/images/Thiruketheeswaram kovil.jpg
+    - assets/images/Mannar bird sanctuary.jpg
+    - assets/images/mann.jpg
+
+    #Ratnapura
+    - assets/images/Adam's Peak.jpg
+    - assets/images/Sri Sumana Saman Dewalaya.jpg
+    - assets/images/Batadomba Lena Cave.jpg
+    - assets/images/Dhanaja Gemological Museum.jpg
+    - assets/images/National Museum Ratnapura.jpg
+    - assets/images/Kirindi Ella Waterfalls.jpg
+    - assets/images/Bopath Ella Waterfall.jpg
+    - assets/images/1.jpg
+
+    #Kegalle
+    - assets/images/Gal viharaya.jpg
+    - assets/images/parakrama samudraya.jpg
+    - assets/images/minneriya.jpg
+    - assets/images/somawathiya.jpg
+    - assets/images/nissanka.jpg
+    - assets/images/parakramabhahu statue.jpg
+    - assets/images/Kaudulla.jpg
+    - assets/images/gal potha.jpg
+    - assets/images/vatadage.jpg
+    - assets/images/council.jpg
+
+    #Kegalle
+    - assets/images/Pinnawala Elephant Orphanage.jpg
+    - assets/images/Millennium Elephant Foundation.jpg
+    - assets/images/Kithulgala Water Rafting.jpg
+    - assets/images/Pinnawala Zoo.jpg
+    - assets/images/Bathalegala.webp
+    - assets/images/ke.webp
+
+    #Matara
+    - assets/images/Matara1.webp
+    - assets/images/Mirissa Beach.jpg
+    - assets/images/Polhena Beach.jpg
+    - assets/images/Dondra Lighthouse.jpg
+    - assets/images/Matara Fort.jpg
+    - assets/images/Star Fort.jpg
+
+    #Kalutara
+    - assets/images/Kalu.jpg
+    - assets/images/Fa-Hien Lena.jpg
+    - assets/images/Kalutara Bodhiya.jpg
+    - assets/images/Kande Vihara Temple.jpg
+    - assets/images/Kalutara Beach.jpg
+    - assets/images/Richmond Castle.jpg
+
+    #Kandy
+    - assets/images/The Temple of the Tooth Relic.jpg
+    - assets/images/kan1.webp
+    - assets/images/The Royal Botanical Gardens.webp
+    - assets/images/Kandy Lake.jpg
+    - assets/images/Horton Plains National Park.jpg
+    - assets/images/The Knuckles Mountain Range.jpg
+    - assets/images/hanthana.jpg
+    - assets/images/Kandy view point.jpg
+    - assets/images/Bellwood.webp
+    - assets/images/nelligala.jpg
+    - assets/images/Ambakke.jpg
+
+
+
+
+
+
+
+
+
+
+
+  #   - images/a_dot_ham.jpeg
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+    - family: Caveat
+      fonts:
+        - asset: fonts/Caveat-VariableFont_wght.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
